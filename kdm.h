@@ -6,11 +6,14 @@
 /*   By: nlaerema <nlaerema@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 10:58:17 by nlaerema          #+#    #+#             */
-/*   Updated: 2024/01/10 12:52:13 by nlaerema         ###   ########.fr       */
+/*   Updated: 2024/01/11 10:10:08 by nlaerema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef KDM_H
 # define KDM_H
+
+# include "vec2/vec2.h"
+# include "vec3/vec3.h"
 
 #endif
