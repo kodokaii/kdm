@@ -1,4 +1,4 @@
-NAME 		= kdm.a
+NAME 		= libkdm.a
 CC 			= cc
 CFLAGS 		+= -Wall -Wextra -Werror
 SRC 		= utils/angle.c\
