@@ -1,38 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   type.h                                             :+:      :+:    :+:   */
+/*   utils.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nlaerema <nlaerema@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 10:58:17 by nlaerema          #+#    #+#             */
-/*   Updated: 2024/01/15 11:01:40 by nlaerema         ###   ########.fr       */
+/*   Updated: 2024/01/15 11:07:33 by nlaerema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TYPE_H
-# define TYPE_H
+#ifndef UTILS_H
+# define UTILS_H
 
-# include <math.h>
-# include <stdio.h>
-# include <stdlib.h>
-# include <stdarg.h>
-# include <stdint.h>
-# include <float.h>
+# include "../type.h"
 
-# define X	0
-# define Y	1
-# define Z	2
-# define W	3
-
-# define PI	3.14159265359
-
-typedef float	t_vec2[2];
-typedef float	t_vec3[3];
-typedef float	t_vec4[4];
-
-typedef t_vec2	t_mat2[2];
-typedef t_vec3	t_mat3[3];
-typedef t_vec4	t_mat4[4];
+float	kdm_rad(float deg);
+float	kdm_deg(float rad);
 
 #endif
