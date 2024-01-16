@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.h                                            :+:      :+:    :+:   */
+/*   equation.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nlaerema <nlaerema@student.42lehavre.fr>   +#+  +:+       +#+        */
+/*   By: nlaerema <nlaerema@student.42lehavre.fr>	+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 10:58:17 by nlaerema          #+#    #+#             */
-/*   Updated: 2024/01/16 12:11:03 by nlaerema         ###   ########.fr       */
+/*   Updated: 2024/01/16 12:10:21 by nlaerema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef UTILS_H
-# define UTILS_H
+#include "../type.h"
 
-# include "../type.h"
+int	kdm_quadratic_equation(float x[2], float a, float b, float c)
+{
+	float	d;
 
-float	kdm_rad(float deg);
-float	kdm_deg(float rad);
-
-int		kdm_quadratic_equation(float x[2], float a, float b, float c);
-
-#endif
+	d = (b * b) - 4 * a * c;
+	if (d < 0)
+		return (EXIT_FAILURE);
+	d = sqrtf(d);
+	x[0] = (-b - d) / (2 * a);
+	x[1] = (-b + d) / (2 * a);
+	return (EXIT_SUCCESS);
+}

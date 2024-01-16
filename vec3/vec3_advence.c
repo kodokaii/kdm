@@ -6,7 +6,7 @@
 /*   By: nlaerema <nlaerema@student.42lehavre.fr>	+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 10:58:17 by nlaerema          #+#    #+#             */
-/*   Updated: 2024/01/11 09:32:20 by nlaerema         ###   ########.fr       */
+/*   Updated: 2024/01/16 12:15:06 by nlaerema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,7 @@ void	kdm_vec3_rotate(t_vec3 dst, t_vec3 v, float angle, t_vec3 axis)
 	kdm_vec3_cross(vy, axis_n, v);
 	kdm_vec3_scale(vy, vy, rotate[Y]);
 	kdm_vec3_scale(vz, axis_n, kdm_vec3_dot(axis_n, v) * (1.0f - rotate[X]));
-	kdm_vec3_add(dst, vx, vy);
-	kdm_vec3_add(dst, dst, vy);
+	kdm_vec3_addv(dst, 3, vx, vy, vz);
 }
 
 void	kdm_vec3_center(t_vec3 dst, t_vec3 a, t_vec3 b)
