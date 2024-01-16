@@ -2,6 +2,7 @@ NAME 		= libkdm.a
 CC 			= cc
 CFLAGS 		+= -Wall -Wextra -Werror
 SRC 		= utils/angle.c\
+			  utils/equation.c\
 			  vec2/vec2_advence.c\
 			  vec2/vec2_basic.c\
 			  vec2/vec2_init.c\
@@ -12,7 +13,6 @@ SRC 		= utils/angle.c\
 			  vec3/vec3_advence.c\
 			  vec3/vec3_basic.c\
 			  vec3/vec3_init.c\
-			  vec3/vec3_n.c\
 			  vec3/vec3_opperation1.c\
 			  vec3/vec3_opperation2.c\
 			  vec3/vec3_utils.c\
