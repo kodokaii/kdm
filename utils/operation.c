@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.h                                            :+:      :+:    :+:   */
+/*   operation.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nlaerema <nlaerema@student.42lehavre.fr>   +#+  +:+       +#+        */
+/*   By: nlaerema <nlaerema@student.42lehavre.fr>	+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 10:58:17 by nlaerema          #+#    #+#             */
-/*   Updated: 2024/01/17 20:33:03 by nlaerema         ###   ########.fr       */
+/*   Updated: 2024/01/17 20:32:15 by nlaerema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef UTILS_H
-# define UTILS_H
+#include "../type.h"
 
-# include "../type.h"
-
-float	kdm_square(float a);
-
-float	kdm_rad(float deg);
-float	kdm_deg(float rad);
-
-int		kdm_quadratic_equation(float x[2], float a, float b, float c);
-
-#endif
+float	kdm_square(float a)
+{
+	return (a * a);
+}
