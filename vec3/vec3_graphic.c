@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.h                                            :+:      :+:    :+:   */
+/*   vec3_graphic.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nlaerema <nlaerema@student.42lehavre.fr>   +#+  +:+       +#+        */
+/*   By: nlaerema <nlaerema@student.42lehavre.fr>	+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 10:58:17 by nlaerema          #+#    #+#             */
-/*   Updated: 2024/01/19 15:13:37 by nlaerema         ###   ########.fr       */
+/*   Updated: 2024/01/19 18:34:58 by nlaerema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef UTILS_H
-# define UTILS_H
+#include "vec3.h"
 
-# include "../type.h"
+void	kdm_vec3_reflect(t_vec3 dst, t_vec3 vec, t_vec3 normal)
+{
+	t_vec3	direction;
 
-float	kdm_square(float a);
-
-float	kdm_rad(float deg);
-float	kdm_deg(float rad);
-
-int		kdm_quadratic_equation(float x[2], float a, float b, float c);
-
-float	kdm_clamp(float a, float min, float max);
-
-#endif
+	kdm_vec3_scale(direction, normal, 2 * kdm_vec3_dot(vec, normal));
+	kdm_vec3_sub(dst, vec, direction);
+}

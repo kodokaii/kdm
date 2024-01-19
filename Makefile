@@ -4,6 +4,7 @@ CFLAGS 		+= -Wall -Wextra -Werror
 SRC 		= utils/angle.c\
 			  utils/equation.c\
 			  utils/operation.c\
+			  utils/utils.c\
 			  vec2/vec2_advence.c\
 			  vec2/vec2_basic.c\
 			  vec2/vec2_init.c\

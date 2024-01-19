@@ -6,7 +6,7 @@
 /*   By: nlaerema <nlaerema@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 10:58:17 by nlaerema          #+#    #+#             */
-/*   Updated: 2024/01/11 09:53:04 by nlaerema         ###   ########.fr       */
+/*   Updated: 2024/01/19 18:35:35 by nlaerema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,8 @@ void	kdm_vec3_rotate(t_vec3 dst, t_vec3 v, float angle, t_vec3 axis);
 void	kdm_vec3_center(t_vec3 dst, t_vec3 a, t_vec3 b);
 float	kdm_vec3_distance(t_vec3 a, t_vec3 b);
 void	kdm_vec3_lerp(t_vec3 dst, t_vec3 to, float s, t_vec3 from);
+
+//vec3_graphic.c
+void	kdm_vec3_reflect(t_vec3 dst, t_vec3 vec, t_vec3 normal);
 
 #endif
