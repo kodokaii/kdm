@@ -14,6 +14,7 @@ SRC 		= utils/angle.c\
 			  vec2/vec2_variadic.c\
 			  vec3/vec3_advence.c\
 			  vec3/vec3_basic.c\
+			  vec3/vec3_graphic.c\
 			  vec3/vec3_init.c\
 			  vec3/vec3_opperation1.c\
 			  vec3/vec3_opperation2.c\
