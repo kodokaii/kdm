@@ -1,6 +1,6 @@
 NAME 		= libkdm.a
 CC 			= cc
-CFLAGS 		+= -Wall -Wextra -Werror
+CFLAGS 		+= -Wall -Wextra -Werror -O3
 SRC 		= utils/angle.c\
 			  utils/equation.c\
 			  utils/operation.c\
