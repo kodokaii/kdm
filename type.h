@@ -6,7 +6,7 @@
 /*   By: nlaerema <nlaerema@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 10:58:17 by nlaerema          #+#    #+#             */
-/*   Updated: 2024/01/15 11:01:40 by nlaerema         ###   ########.fr       */
+/*   Updated: 2024/01/23 12:58:21 by nlaerema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@
 # define Z	2
 # define W	3
 
-# define PI	3.14159265359
+# define PI		3.141592653
+# define TAU	6.283185307
 
 typedef float	t_vec2[2];
 typedef float	t_vec3[3];
