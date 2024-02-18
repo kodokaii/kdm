@@ -6,7 +6,7 @@
 /*   By: nlaerema <nlaerema@student.42lehavre.fr>	+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 10:58:17 by nlaerema          #+#    #+#             */
-/*   Updated: 2024/01/10 18:20:25 by nlaerema         ###   ########.fr       */
+/*   Updated: 2024/02/18 15:22:50 by nlaerema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	kdm_vec2_rotate(t_vec2 dst, t_vec2 v, float angle)
 	rotate[X] = cosf(angle);
 	rotate[Y] = sinf(angle);
 	dst[X] = rotate[X] * v[X] - rotate[Y] * v[Y];
-	dst[X] = rotate[Y] * v[X] + rotate[X] * v[Y];
+	dst[Y] = rotate[Y] * v[X] + rotate[X] * v[Y];
 }
 
 void	kdm_vec2_center(t_vec2 dst, t_vec2 a, t_vec2 b)
